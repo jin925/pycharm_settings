@@ -1,0 +1,247 @@
+<templateSet group="ThinkPHP">
+  <template name="_volist" value="&lt;volist name=&quot;$name$&quot; id=&quot;$id$&quot;&gt;&#10;$content$&#10;&lt;/volist&gt;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="&quot;list&quot;" alwaysStopAt="true" />
+    <variable name="id" expression="" defaultValue="&quot;vo&quot;" alwaysStopAt="true" />
+    <variable name="content" expression="" defaultValue="&quot;name,id,offset,length,key,mod&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_foreach" value="&lt;foreach name=&quot;$name$&quot; item=&quot;$item$&quot;&gt;&#10;$content$&#10;&lt;/foreach&gt;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="&quot;list&quot;" alwaysStopAt="true" />
+    <variable name="item" expression="" defaultValue="&quot;vo&quot;" alwaysStopAt="true" />
+    <variable name="content" expression="" defaultValue="&quot;name,item,key&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_for" value="&lt;for start=&quot;$start$&quot; end=&quot;$end$&quot;&gt;&#10;$content$&#10;&lt;/for&gt;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="start" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="&quot;10&quot;" alwaysStopAt="true" />
+    <variable name="content" expression="" defaultValue="&quot;start,end,comparison,step,name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_switch" value="&lt;switch name=&quot;$name$&quot; &gt;&#10;    &lt;case value=&quot;$var1$&quot;$case$&gt;$content1$&lt;/case&gt;&#10;    &lt;case value=&quot;$var2$&quot;&gt;$content2$&lt;/case&gt;&#10;    &lt;default /&gt;$cotent3$&#10;&lt;/switch&gt;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="&quot;$case&quot;" alwaysStopAt="true" />
+    <variable name="var1" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="case" expression="" defaultValue="&quot; break=\&quot;$break$\&quot;&quot;" alwaysStopAt="true" />
+    <variable name="content1" expression="" defaultValue="&quot;输出内容1&quot;" alwaysStopAt="true" />
+    <variable name="var2" expression="" defaultValue="&quot;2&quot;" alwaysStopAt="true" />
+    <variable name="content2" expression="" defaultValue="&quot;输出内容2&quot;" alwaysStopAt="true" />
+    <variable name="cotent3" expression="" defaultValue="&quot;默认情况&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_case" value="&lt;case value=&quot;$var$&quot;&gt;$content$&lt;/case&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_eq" value="&lt;eq name=&quot;$name$&quot; value=&quot;$var$&quot;&gt;$END$&lt;/eq&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_neq" value="&lt;neq name=&quot;$name$&quot; value=&quot;$var$&quot;&gt;$END$&lt;/neq&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_gt" value="&lt;gt name=&quot;$name$&quot; value=&quot;$var$&quot;&gt;$END$&lt;/gt&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_egt" value="&lt;egt name=&quot;$name$&quot; value=&quot;$var$&quot;&gt;$END$&lt;/egt&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_lt" value="&lt;lt name=&quot;$name$&quot; value=&quot;$var$&quot;&gt;$END$&lt;/lt&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_elt" value="&lt;elt name=&quot;$name$&quot; value=&quot;$var$&quot;&gt;$END$&lt;/elt&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_heq" value="&lt;heq name=&quot;$name$&quot; value=&quot;$var$&quot;&gt;$END$&lt;/heq&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_nheq" value="&lt;nheq name=&quot;$name$&quot; value=&quot;$var$&quot;&gt;$END$&lt;/nheq&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_else" value="&lt;else /&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_in" value="&lt;in name=&quot;$name$&quot; value=&quot;$var$&quot;&gt;$END$&lt;/in&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="&quot;$id&quot;" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="&quot;1,2,3&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_notin" value="&lt;notin name=&quot;$name$&quot; value=&quot;$var$&quot;&gt;$END$&lt;/notin&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="&quot;$id&quot;" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="&quot;1,2,3&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_between" value="&lt;between name=&quot;$name$&quot; value=&quot;$var$&quot;&gt;$END$&lt;/between&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="&quot;$id&quot;" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="&quot;1,10&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_notbetween" value="&lt;notbetween name=&quot;$name$&quot; value=&quot;$var$&quot;&gt;$END$&lt;/notbetween&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="&quot;$id&quot;" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="&quot;1,10&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_range" value="&lt;range name=&quot;$name$&quot; value=&quot;$var$&quot; type=&quot;$type$&quot;&gt;$END$&lt;/range&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="&quot;$id&quot;" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="&quot;1,10&quot;" alwaysStopAt="true" />
+    <variable name="type" expression="enum(&quot;in&quot;,&quot;notin&quot;,&quot;between&quot;,&quot;notbetween&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_if" value="&lt;if condition=&quot;$cond$&quot;&gt;&#10;$content$&#10;&lt;/if&gt;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="cond" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression="" defaultValue="&quot;do some thing&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_elseif" value="&lt;elseif condition=&quot;$cond$&quot; /&gt;&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="cond" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_empty" value="&lt;empty name=&quot;$name$&quot;&gt;$END$&lt;/empty&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="&quot;$name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_notempty" value="&lt;notempty name=&quot;$name$&quot;&gt;$END$&lt;/notempty&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="&quot;$name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_literal" value="&lt;literal&gt;&#10;$END$&#10;&lt;/literal&gt;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_layout" value="&lt;include file=&quot;$file1$&quot;/&gt;&#10;{__CONTENT__}&#10;&lt;include file=&quot;$file2$&quot;/&gt;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="file1" expression="" defaultValue="&quot;Public:header&quot;" alwaysStopAt="true" />
+    <variable name="file2" expression="" defaultValue="&quot;Public:footer&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_php" value="&lt;php&gt;$content$&lt;/php&gt;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="content" expression="user()" defaultValue="&quot;echo 'Hello,world!'&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="|fun" value="|$fun$=$args$$var$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="fun" expression="" defaultValue="&quot;date&quot;" alwaysStopAt="true" />
+    <variable name="args" expression="" defaultValue="&quot;'Y-m-d H:i:s'&quot;" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="&quot;,###&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="|def" value="|default='$def$'" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="def" expression="" defaultValue="&quot;默认值&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_include" value="&lt;include file=&quot;$file$&quot; /&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="file" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name=":u" value="{:U('$fun$'$args$)}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="fun" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="args" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name=":U" value="{:U('$fun$'$args$)}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="fun" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="args" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name=":f" value="{:$func$('$name$'$args$)}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="func" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="args" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name=":F" value="{:$func$('$name$'$args$)}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="func" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="args" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_block" value="&lt;block name=&quot;$NAME$&quot;&gt;$END$&lt;/block&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_extend" value="&lt;extend name=&quot;$NAME$&quot; /&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>

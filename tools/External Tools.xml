@@ -1,0 +1,9 @@
+<toolSet name="External Tools">
+  <tool name="打包文件" description="打包文件" showInMainMenu="true" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="7z" />
+      <option name="PARAMETERS" value="a z.zip $FileRelativePath$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+</toolSet>

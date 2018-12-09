@@ -1,0 +1,23 @@
+<templateSet group="html/xml">
+  <template name="?php" value="&lt;?php $segment$ ?&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="segment" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_im" value="http://temp.im/" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_less" value="//cdn.bootcss.com/less.js/2.7.1/less.min.js" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="_:;" value="javascript:;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
